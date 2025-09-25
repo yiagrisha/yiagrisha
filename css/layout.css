@@ -84,7 +84,6 @@
   .ids__sequence-item {
     --columns: 4;
     width: calc((100% - var(--gap) * (var(--columns) - 1)) / var(--columns));
-    height: 15em;
 
     @media (width < 767px) {
       --columns: 2;
@@ -125,4 +124,29 @@
 header,
 footer {
   padding: calc(var(--ids__density) * 1em);
+}
+header {
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  a {
+    background-color: rgb(var(--ids__background-RGB));
+  }
+}
+
+
+.projectCaption {
+  height: 2em;
+
+  margin: 0.4em 0.5em;
+
+    p {
+      display: inline-block;
+      color: rgb(var(--ids__text-RGB));
+      background-color: rgb(var(--ids__surface-RGB));
+
+    }
+
 }
