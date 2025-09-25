@@ -133,6 +133,13 @@ header {
 
   a {
     background-color: rgb(var(--ids__background-RGB));
+    padding: 0;
+    margin: 0;
+
+    svg {
+      margin-top: -2em;
+      width: 9em;
+    }
   }
 }
 
@@ -148,5 +155,19 @@ header {
       background-color: rgb(var(--ids__surface-RGB));
 
     }
+}
 
+#info {
+  #facepic {
+    width: 10em;
+    border-radius: 5em;
+    margin-bottom: 2em;
+    position: absolute;
+    top: 3em;
+    right: 0;
+
+    @media (width < 767px) {
+      position: static;
+    }
+  }
 }
